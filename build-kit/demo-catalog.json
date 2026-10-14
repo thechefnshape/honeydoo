@@ -1,0 +1,2201 @@
+{
+  "_note": "Fictional demo shops for honeydoo. Every shop is is_demo = true and must be labeled and treated as fictional. Prices are integer cents.",
+  "market": {
+    "slug": "lakewood-oh",
+    "name": "Lakewood",
+    "state": "OH",
+    "latitude": 41.4819,
+    "longitude": -81.7982
+  },
+  "categories": [
+    {
+      "slug": "food",
+      "name": "Food"
+    },
+    {
+      "slug": "coffee",
+      "name": "Coffee"
+    },
+    {
+      "slug": "flowers",
+      "name": "Flowers"
+    },
+    {
+      "slug": "groceries",
+      "name": "Groceries"
+    },
+    {
+      "slug": "gifts",
+      "name": "Gifts"
+    },
+    {
+      "slug": "home",
+      "name": "Home"
+    },
+    {
+      "slug": "plants",
+      "name": "Plants"
+    },
+    {
+      "slug": "books",
+      "name": "Books"
+    }
+  ],
+  "shops": [
+    {
+      "slug": "corner-smash",
+      "name": "Corner Smash",
+      "category": "food",
+      "description": "Smash burgers, hand-cut fries and thick shakes. Counter service, made to order.",
+      "cover_image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0124",
+      "email": "hello@corner-smash.example",
+      "location": {
+        "address": "17100 Madison Ave",
+        "neighborhood": "Madison Avenue",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4752,
+        "longitude": -81.794,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ],
+          "mon": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ],
+          "sat": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ],
+          "sun": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ],
+          "thu": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ],
+          "tue": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ],
+          "wed": [
+            [
+              "11:00",
+              "21:00"
+            ]
+          ]
+        },
+        "prep_minutes": 15,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Black & White Shake",
+          "description": "Vanilla custard spun with chocolate fudge.",
+          "category": "food",
+          "tags": [
+            "shake",
+            "dessert",
+            "sweet",
+            "drink"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Regular",
+              "price_cents": 700,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Fried Chicken Sandwich",
+          "description": "Buttermilk-brined thigh, slaw and hot honey.",
+          "category": "food",
+          "tags": [
+            "chicken",
+            "sandwich",
+            "lunch",
+            "dinner",
+            "spicy"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1705131186176-1c7cdb830815?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Regular",
+              "price_cents": 1400,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Garden Grain Bowl",
+          "description": "Farro, roasted vegetables, greens, feta and lemon tahini.",
+          "category": "food",
+          "tags": [
+            "bowl",
+            "salad",
+            "vegetarian",
+            "healthy",
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1666819691822-29a09f0992e5?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Regular",
+              "price_cents": 1500,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Hand-Cut Fries",
+          "description": "Twice fried, salted, with house sauce on the side.",
+          "category": "food",
+          "tags": [
+            "fries",
+            "side",
+            "lunch",
+            "dinner",
+            "vegetarian"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598679253544-2c97992403ea?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Regular",
+              "price_cents": 500,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            },
+            {
+              "name": "Large",
+              "price_cents": 700,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Kids' Grilled Cheese",
+          "description": "Cheddar on buttered white bread with a side of fries.",
+          "category": "food",
+          "tags": [
+            "kids",
+            "grilled cheese",
+            "lunch",
+            "dinner",
+            "vegetarian"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Regular",
+              "price_cents": 800,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Smash Burger",
+          "description": "Griddled beef, American cheese, house sauce and pickles on a potato bun.",
+          "category": "food",
+          "tags": [
+            "burger",
+            "lunch",
+            "dinner",
+            "beef"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1688246780164-00c01647e78c?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Single",
+              "price_cents": 1300,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            },
+            {
+              "name": "Double",
+              "price_cents": 1600,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Toppings",
+              "selection": "multiple",
+              "min": 0,
+              "max": 5,
+              "options": [
+                {
+                  "name": "Pickles",
+                  "price_cents": 0,
+                  "default": true
+                },
+                {
+                  "name": "Grilled onions",
+                  "price_cents": 0,
+                  "default": false
+                },
+                {
+                  "name": "Bacon",
+                  "price_cents": 250,
+                  "default": false
+                },
+                {
+                  "name": "Jalapeños",
+                  "price_cents": 75,
+                  "default": false
+                },
+                {
+                  "name": "Extra cheese",
+                  "price_cents": 150,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ember-and-oak",
+      "name": "Ember & Oak Home",
+      "category": "home",
+      "description": "Considered goods for the home: candles, linens, wood and stoneware.",
+      "cover_image_url": "https://images.unsplash.com/photo-1789811878526-ff057243a782?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0165",
+      "email": "hello@ember-and-oak.example",
+      "location": {
+        "address": "12200 Edgewater Dr",
+        "neighborhood": "Edgewater",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4893,
+        "longitude": -81.786,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "sat": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "thu": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "tue": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "wed": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ]
+        },
+        "prep_minutes": 20,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Cedar Candle",
+          "description": "Coconut soy wax, cedarwood and smoke. 60 hour burn.",
+          "category": "home",
+          "tags": [
+            "candle",
+            "cedar",
+            "home",
+            "gift",
+            "cozy"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1612179543058-ab74d388e0ce?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "8 oz",
+              "price_cents": 2800,
+              "available": true,
+              "stock": 14,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Linen Tea Towel Set",
+          "description": "Two stonewashed linen towels in natural and charcoal.",
+          "category": "home",
+          "tags": [
+            "kitchen",
+            "linen",
+            "towel",
+            "home",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1596433904747-e8b061219a71?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Set of 2",
+              "price_cents": 2400,
+              "available": true,
+              "stock": 10,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Stoneware Bowl Set",
+          "description": "Four hand-glazed bowls, dishwasher safe.",
+          "category": "home",
+          "tags": [
+            "bowls",
+            "kitchen",
+            "ceramic",
+            "dinnerware",
+            "home"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1731162694065-b4e5f6a667e6?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Set of 4",
+              "price_cents": 6400,
+              "available": true,
+              "stock": 5,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Taper Candle Holders",
+          "description": "A pair of weighted holders with two unscented tapers.",
+          "category": "home",
+          "tags": [
+            "candle",
+            "holder",
+            "decor",
+            "home",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1603703467600-57e385ec81f7?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Pair",
+              "price_cents": 3600,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Walnut Cutting Board",
+          "description": "Made from Ohio black walnut. 12 x 18 inches.",
+          "category": "home",
+          "tags": [
+            "kitchen",
+            "wood",
+            "cutting board",
+            "gift",
+            "wedding",
+            "anniversary",
+            "handmade"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1587302108992-20648821725d?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "12 x 18 in",
+              "price_cents": 5800,
+              "available": true,
+              "stock": 4,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Wool Throw Blanket",
+          "description": "Soft lambswool in a herringbone weave. 50 x 60 inches.",
+          "category": "home",
+          "tags": [
+            "blanket",
+            "throw",
+            "cozy",
+            "home",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1734553529922-bc020a21643b?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Natural",
+              "price_cents": 12000,
+              "available": true,
+              "stock": 2,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    },
+    {
+      "slug": "fern-and-field",
+      "name": "Fern & Field Flowers",
+      "category": "flowers",
+      "description": "Seasonal, loosely arranged bouquets using Ohio-grown stems whenever possible.",
+      "cover_image_url": "https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0193",
+      "email": "hello@fern-and-field.example",
+      "location": {
+        "address": "16300 Madison Ave",
+        "neighborhood": "Madison Avenue",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.474,
+        "longitude": -81.7905,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "mon": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "sat": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "thu": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "tue": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "wed": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ]
+        },
+        "prep_minutes": 30,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Bud Vase Arrangement",
+          "description": "A few delicate stems in a small glass vase you keep.",
+          "category": "flowers",
+          "tags": [
+            "vase",
+            "flowers",
+            "small gift",
+            "desk",
+            "thank you"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1603178455924-ef33372953bb?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Small",
+              "price_cents": 2400,
+              "available": true,
+              "stock": 9,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Add a card",
+              "selection": "single",
+              "min": 0,
+              "max": 1,
+              "options": [
+                {
+                  "name": "Handwritten note card",
+                  "price_cents": 400,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dozen Red Roses",
+          "description": "Twelve long-stem red roses with eucalyptus.",
+          "category": "flowers",
+          "tags": [
+            "roses",
+            "flowers",
+            "anniversary",
+            "romantic",
+            "valentine",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1620346328449-f8fb90a40ad5?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Dozen",
+              "price_cents": 6800,
+              "available": true,
+              "stock": 5,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Add a card",
+              "selection": "single",
+              "min": 0,
+              "max": 1,
+              "options": [
+                {
+                  "name": "Handwritten note card",
+                  "price_cents": 400,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dried Flower Bunch",
+          "description": "Bunny tails, lavender and wheat. Lasts for months.",
+          "category": "flowers",
+          "tags": [
+            "dried",
+            "flowers",
+            "decor",
+            "gift",
+            "lasting"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1622658641558-235f26dd270b?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Bunch",
+              "price_cents": 3200,
+              "available": true,
+              "stock": 7,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Peony Bouquet",
+          "description": "Lush garden peonies. Seasonal: back in late spring.",
+          "category": "flowers",
+          "tags": [
+            "peonies",
+            "flowers",
+            "seasonal"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1579664872746-55e2a805d705?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Bouquet",
+              "price_cents": 7200,
+              "available": true,
+              "stock": 0,
+              "availability": "out_of_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Seasonal Flower Bouquet",
+          "description": "The florist's pick of this week's best stems, wrapped in kraft paper.",
+          "category": "flowers",
+          "tags": [
+            "bouquet",
+            "flowers",
+            "gift",
+            "anniversary",
+            "birthday",
+            "romantic",
+            "thank you"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1572454591674-2739f30d8c40?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Petite",
+              "price_cents": 3500,
+              "available": true,
+              "stock": 8,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Classic",
+              "price_cents": 5500,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Grand",
+              "price_cents": 8500,
+              "available": true,
+              "stock": 2,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Add a card",
+              "selection": "single",
+              "min": 0,
+              "max": 1,
+              "options": [
+                {
+                  "name": "Handwritten note card",
+                  "price_cents": 400,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sunflower Bundle",
+          "description": "Five bright sunflowers, ready for a vase.",
+          "category": "flowers",
+          "tags": [
+            "sunflowers",
+            "flowers",
+            "cheerful",
+            "gift",
+            "get well"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Five stems",
+              "price_cents": 2800,
+              "available": true,
+              "stock": 10,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Add a card",
+              "selection": "single",
+              "min": 0,
+              "max": 1,
+              "options": [
+                {
+                  "name": "Handwritten note card",
+                  "price_cents": 400,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "little-lake-goods",
+      "name": "Little Lake Goods",
+      "category": "gifts",
+      "description": "Gifts, cards and small-batch goods made by artists around the Great Lakes.",
+      "cover_image_url": "https://images.unsplash.com/photo-1786325492068-00eb1cd93b78?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0187",
+      "email": "hello@little-lake-goods.example",
+      "location": {
+        "address": "14800 Detroit Ave",
+        "neighborhood": "Downtown Lakewood",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4815,
+        "longitude": -81.7965,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ],
+          "mon": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ],
+          "sat": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ],
+          "sun": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ],
+          "thu": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ],
+          "tue": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ],
+          "wed": [
+            [
+              "11:00",
+              "19:00"
+            ]
+          ]
+        },
+        "prep_minutes": 15,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Crystal Growing Science Kit",
+          "description": "Grow seven crystal specimens at home. Includes a guide to the chemistry. Ages 8 and up.",
+          "category": "gifts",
+          "tags": [
+            "kids",
+            "science",
+            "stem",
+            "experiment",
+            "birthday",
+            "gift",
+            "toy",
+            "age 8"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1678244660394-fa02a19ac24a?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Kit",
+              "price_cents": 2800,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Hand-Knit Beanie",
+          "description": "Merino wool, knit locally. One size.",
+          "category": "gifts",
+          "tags": [
+            "hat",
+            "beanie",
+            "winter",
+            "knit",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1544967919-44c1ef2f9e7a?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Oat",
+              "price_cents": 2600,
+              "available": true,
+              "stock": 7,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Charcoal",
+              "price_cents": 2600,
+              "available": true,
+              "stock": 5,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Handmade Ceramic Mug",
+          "description": "Wheel-thrown stoneware in a speckled glaze. Holds 12 oz.",
+          "category": "gifts",
+          "tags": [
+            "mug",
+            "ceramic",
+            "handmade",
+            "gift",
+            "coffee lover"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1495100497150-fe209c585f50?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Speckled white",
+              "price_cents": 3400,
+              "available": true,
+              "stock": 8,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Lake blue",
+              "price_cents": 3400,
+              "available": true,
+              "stock": 2,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Lake Erie Shoreline Print",
+          "description": "11 x 14 inch archival print of the Lakewood shoreline.",
+          "category": "gifts",
+          "tags": [
+            "print",
+            "art",
+            "map",
+            "local",
+            "gift",
+            "decor"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1687816043339-7da9811d4746?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Unframed",
+              "price_cents": 4500,
+              "available": true,
+              "stock": 10,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Letterpress Greeting Card",
+          "description": "Printed by hand in Cleveland. Blank inside.",
+          "category": "gifts",
+          "tags": [
+            "card",
+            "greeting card",
+            "birthday",
+            "thank you",
+            "anniversary",
+            "stationery"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1481011784351-b0227b9f4a80?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Birthday",
+              "price_cents": 600,
+              "available": true,
+              "stock": 40,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Thank you",
+              "price_cents": 600,
+              "available": true,
+              "stock": 32,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Anniversary",
+              "price_cents": 600,
+              "available": true,
+              "stock": 18,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Soy Candle Gift Set",
+          "description": "Three travel tins: cedar, citrus and fig.",
+          "category": "gifts",
+          "tags": [
+            "candle",
+            "gift set",
+            "gift",
+            "anniversary",
+            "birthday",
+            "self care"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1643122966676-29e8597257f7?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Set of 3",
+              "price_cents": 3800,
+              "available": true,
+              "stock": 9,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    },
+    {
+      "slug": "low-tide-coffee",
+      "name": "Low Tide Coffee",
+      "category": "coffee",
+      "description": "A small espresso bar roasting single-origin beans in house, a few blocks from the lake.",
+      "cover_image_url": "https://images.unsplash.com/photo-1777372307561-38fbe6a2eb02?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0141",
+      "email": "hello@low-tide-coffee.example",
+      "location": {
+        "address": "1400 Madison Ave",
+        "neighborhood": "Birdtown",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4766,
+        "longitude": -81.7719,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ],
+          "mon": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ],
+          "sat": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ],
+          "sun": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ],
+          "thu": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ],
+          "tue": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ],
+          "wed": [
+            [
+              "06:30",
+              "17:00"
+            ]
+          ]
+        },
+        "prep_minutes": 8,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Blueberry Muffin",
+          "description": "Baked every morning with wild blueberries and a sugar crust.",
+          "category": "food",
+          "tags": [
+            "pastry",
+            "breakfast",
+            "muffin"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1637087788449-222cf1da072a?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Each",
+              "price_cents": 375,
+              "available": true,
+              "stock": 9,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Breakfast Sandwich",
+          "description": "Folded egg, sharp cheddar and bacon on a toasted brioche bun.",
+          "category": "food",
+          "tags": [
+            "breakfast",
+            "sandwich",
+            "egg",
+            "bacon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Bacon, egg & cheddar",
+              "price_cents": 750,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            },
+            {
+              "name": "Egg & cheddar",
+              "price_cents": 650,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Cappuccino",
+          "description": "Equal parts espresso, steamed milk and foam.",
+          "category": "coffee",
+          "tags": [
+            "espresso",
+            "hot",
+            "drink"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1563311977-d285756282dc?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "8 oz",
+              "price_cents": 475,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Milk",
+              "selection": "single",
+              "min": 1,
+              "max": 1,
+              "options": [
+                {
+                  "name": "Whole milk",
+                  "price_cents": 0,
+                  "default": true
+                },
+                {
+                  "name": "Oat milk",
+                  "price_cents": 75,
+                  "default": false
+                },
+                {
+                  "name": "Almond milk",
+                  "price_cents": 75,
+                  "default": false
+                },
+                {
+                  "name": "Skim milk",
+                  "price_cents": 0,
+                  "default": false
+                }
+              ]
+            },
+            {
+              "name": "Extras",
+              "selection": "multiple",
+              "min": 0,
+              "max": 3,
+              "options": [
+                {
+                  "name": "Extra shot",
+                  "price_cents": 100,
+                  "default": false
+                },
+                {
+                  "name": "Vanilla syrup",
+                  "price_cents": 60,
+                  "default": false
+                },
+                {
+                  "name": "Light ice",
+                  "price_cents": 0,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cold Brew",
+          "description": "Steeped for 18 hours. Smooth, chocolatey, strong.",
+          "category": "coffee",
+          "tags": [
+            "iced",
+            "cold",
+            "drink"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1531835207745-506a1bc035d8?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "12 oz",
+              "price_cents": 450,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            },
+            {
+              "name": "16 oz",
+              "price_cents": 525,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Extras",
+              "selection": "multiple",
+              "min": 0,
+              "max": 3,
+              "options": [
+                {
+                  "name": "Extra shot",
+                  "price_cents": 100,
+                  "default": false
+                },
+                {
+                  "name": "Vanilla syrup",
+                  "price_cents": 60,
+                  "default": false
+                },
+                {
+                  "name": "Light ice",
+                  "price_cents": 0,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Iced Vanilla Latte",
+          "description": "Double espresso, house vanilla syrup and cold milk over ice.",
+          "category": "coffee",
+          "tags": [
+            "latte",
+            "iced",
+            "espresso",
+            "drink",
+            "vanilla"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "12 oz",
+              "price_cents": 525,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            },
+            {
+              "name": "16 oz",
+              "price_cents": 595,
+              "available": true,
+              "stock": null,
+              "availability": "available"
+            }
+          ],
+          "option_groups": [
+            {
+              "name": "Milk",
+              "selection": "single",
+              "min": 1,
+              "max": 1,
+              "options": [
+                {
+                  "name": "Whole milk",
+                  "price_cents": 0,
+                  "default": true
+                },
+                {
+                  "name": "Oat milk",
+                  "price_cents": 75,
+                  "default": false
+                },
+                {
+                  "name": "Almond milk",
+                  "price_cents": 75,
+                  "default": false
+                },
+                {
+                  "name": "Skim milk",
+                  "price_cents": 0,
+                  "default": false
+                }
+              ]
+            },
+            {
+              "name": "Extras",
+              "selection": "multiple",
+              "min": 0,
+              "max": 3,
+              "options": [
+                {
+                  "name": "Extra shot",
+                  "price_cents": 100,
+                  "default": false
+                },
+                {
+                  "name": "Vanilla syrup",
+                  "price_cents": 60,
+                  "default": false
+                },
+                {
+                  "name": "Light ice",
+                  "price_cents": 0,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Locally Roasted Coffee Beans",
+          "description": "Our house blend, roasted in Lakewood every Tuesday. Notes of cocoa and cherry.",
+          "category": "coffee",
+          "tags": [
+            "beans",
+            "roasted",
+            "gift",
+            "local",
+            "bag"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": true,
+          "variations": [
+            {
+              "name": "12 oz whole bean",
+              "price_cents": 1700,
+              "available": true,
+              "stock": 24,
+              "availability": "in_stock"
+            },
+            {
+              "name": "12 oz ground",
+              "price_cents": 1700,
+              "available": true,
+              "stock": 3,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    },
+    {
+      "slug": "pantry-and-pear",
+      "name": "Pantry & Pear Market",
+      "category": "groceries",
+      "description": "A neighborhood market for local produce, dairy, pantry staples and cheese.",
+      "cover_image_url": "https://images.unsplash.com/photo-1591586116988-62fe65164f8d?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0158",
+      "email": "hello@pantry-and-pear.example",
+      "location": {
+        "address": "20100 Detroit Ave",
+        "neighborhood": "West End",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4795,
+        "longitude": -81.814,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ],
+          "mon": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ],
+          "sun": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ],
+          "thu": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ],
+          "tue": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ],
+          "wed": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ]
+        },
+        "prep_minutes": 20,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Cheese Board Kit",
+          "description": "Three cheeses, crackers, fig jam and marcona almonds. Serves four.",
+          "category": "groceries",
+          "tags": [
+            "cheese",
+            "party",
+            "gift",
+            "entertaining",
+            "snack"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1707079288822-be30b3d1de72?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Serves 4",
+              "price_cents": 3200,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Fresh Egg Pasta",
+          "description": "Hand-cut tagliatelle made in house. Cooks in three minutes.",
+          "category": "groceries",
+          "tags": [
+            "pasta",
+            "dinner",
+            "fresh"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1612966893103-790e549a2ab1?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "1 lb",
+              "price_cents": 900,
+              "available": true,
+              "stock": 10,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Heirloom Tomatoes",
+          "description": "Mixed heirloom varieties, priced per pound.",
+          "category": "groceries",
+          "tags": [
+            "tomatoes",
+            "produce",
+            "vegetables",
+            "local"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1758972574908-bc43ad077156?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "1 lb",
+              "price_cents": 550,
+              "available": true,
+              "stock": 5,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Local Raw Honey",
+          "description": "Wildflower honey from hives in Cuyahoga County.",
+          "category": "groceries",
+          "tags": [
+            "honey",
+            "local",
+            "pantry",
+            "gift",
+            "sweet"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": true,
+          "variations": [
+            {
+              "name": "16 oz jar",
+              "price_cents": 1400,
+              "available": true,
+              "stock": 18,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Ohio Maple Syrup",
+          "description": "Grade A amber syrup from Geauga County sugar bushes.",
+          "category": "groceries",
+          "tags": [
+            "maple",
+            "syrup",
+            "breakfast",
+            "pantry",
+            "gift",
+            "local"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1740423099949-b0dfcabd91ce?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "12 oz bottle",
+              "price_cents": 1600,
+              "available": true,
+              "stock": 12,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Pasture-Raised Eggs",
+          "description": "One dozen brown eggs from a family farm in Medina County.",
+          "category": "groceries",
+          "tags": [
+            "eggs",
+            "breakfast",
+            "dairy",
+            "farm"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Dozen",
+              "price_cents": 700,
+              "available": true,
+              "stock": 30,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    },
+    {
+      "slug": "rise-and-crumb",
+      "name": "Rise & Crumb Bakery",
+      "category": "food",
+      "description": "Naturally leavened bread, laminated pastries and cookies, baked before sunrise.",
+      "cover_image_url": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0172",
+      "email": "hello@rise-and-crumb.example",
+      "location": {
+        "address": "15200 Detroit Ave",
+        "neighborhood": "Downtown Lakewood",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4822,
+        "longitude": -81.799,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "07:00",
+              "15:00"
+            ]
+          ],
+          "sat": [
+            [
+              "07:00",
+              "15:00"
+            ]
+          ],
+          "sun": [
+            [
+              "07:00",
+              "15:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "15:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "15:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "15:00"
+            ]
+          ]
+        },
+        "prep_minutes": 5,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Almond Croissant",
+          "description": "Twice-baked butter croissant with almond frangipane.",
+          "category": "food",
+          "tags": [
+            "pastry",
+            "breakfast",
+            "croissant",
+            "bakery"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Each",
+              "price_cents": 500,
+              "available": true,
+              "stock": 4,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Chocolate Chip Cookies",
+          "description": "Brown butter dough, dark chocolate chunks and flaky salt.",
+          "category": "food",
+          "tags": [
+            "cookies",
+            "dessert",
+            "sweet",
+            "treat",
+            "bakery"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Half dozen",
+              "price_cents": 1200,
+              "available": true,
+              "stock": 10,
+              "availability": "in_stock"
+            },
+            {
+              "name": "Dozen",
+              "price_cents": 2200,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Cinnamon Morning Bun",
+          "description": "Croissant dough rolled with cinnamon sugar and orange zest.",
+          "category": "food",
+          "tags": [
+            "pastry",
+            "breakfast",
+            "sweet",
+            "bakery"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1686207855146-c3ffe2166d40?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Each",
+              "price_cents": 450,
+              "available": true,
+              "stock": 12,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Country Sourdough Loaf",
+          "description": "Three-day ferment, crackly crust, open crumb. About 900 g.",
+          "category": "food",
+          "tags": [
+            "bread",
+            "sourdough",
+            "loaf",
+            "bakery"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Whole loaf",
+              "price_cents": 900,
+              "available": true,
+              "stock": 14,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Seeded Rye",
+          "description": "Dense, nutty rye with caraway, sunflower and flax.",
+          "category": "food",
+          "tags": [
+            "bread",
+            "loaf",
+            "rye",
+            "bakery"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Whole loaf",
+              "price_cents": 1000,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Six-Inch Birthday Cake",
+          "description": "Vanilla sponge, strawberry jam and whipped vanilla buttercream. Order by 10 am.",
+          "category": "food",
+          "tags": [
+            "cake",
+            "birthday",
+            "dessert",
+            "celebration",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1604413191066-4dd20bedf486?auto=format&fit=crop&w=900&q=70",
+          "taxable": false,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Serves 6 to 8",
+              "price_cents": 3800,
+              "available": true,
+              "stock": 0,
+              "availability": "out_of_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    },
+    {
+      "slug": "rootbound-plant-studio",
+      "name": "Rootbound Plant Studio",
+      "category": "plants",
+      "description": "Healthy houseplants, honest care advice and planters for every windowsill.",
+      "cover_image_url": "https://images.unsplash.com/photo-1601985705806-5b9a71f6004f?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0119",
+      "email": "hello@rootbound-plant-studio.example",
+      "location": {
+        "address": "11800 Clifton Blvd",
+        "neighborhood": "Clifton Park",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4879,
+        "longitude": -81.8216,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "sat": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "sun": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "thu": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ],
+          "wed": [
+            [
+              "10:00",
+              "18:00"
+            ]
+          ]
+        },
+        "prep_minutes": 15,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Fiddle Leaf Fig",
+          "description": "A statement tree, about 3 feet tall.",
+          "category": "plants",
+          "tags": [
+            "fiddle leaf",
+            "tree",
+            "houseplant",
+            "plant",
+            "statement"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "3 ft",
+              "price_cents": 6500,
+              "available": true,
+              "stock": 3,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Golden Pothos Hanging Basket",
+          "description": "Trailing vines in an 8 inch hanging pot.",
+          "category": "plants",
+          "tags": [
+            "pothos",
+            "houseplant",
+            "plant",
+            "hanging",
+            "easy care"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1537039557108-4a42c334fd5e?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "8 inch basket",
+              "price_cents": 2400,
+              "available": true,
+              "stock": 9,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Matte Ceramic Planter",
+          "description": "With drainage hole and saucer. Fits a 6 inch nursery pot.",
+          "category": "plants",
+          "tags": [
+            "planter",
+            "pot",
+            "ceramic",
+            "decor"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1588440691140-09155c1be58a?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "6 inch",
+              "price_cents": 2200,
+              "available": true,
+              "stock": 12,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Monstera Deliciosa",
+          "description": "Split-leaf favorite. Bright indirect light, water when the top inch is dry.",
+          "category": "plants",
+          "tags": [
+            "monstera",
+            "houseplant",
+            "plant",
+            "tropical",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1614887410788-e158d6efb3be?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "6 inch pot",
+              "price_cents": 3800,
+              "available": true,
+              "stock": 7,
+              "availability": "in_stock"
+            },
+            {
+              "name": "10 inch pot",
+              "price_cents": 7500,
+              "available": true,
+              "stock": 2,
+              "availability": "low_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Snake Plant",
+          "description": "Nearly indestructible and great in low light.",
+          "category": "plants",
+          "tags": [
+            "snake plant",
+            "houseplant",
+            "plant",
+            "low light",
+            "easy care",
+            "gift"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1599009944997-3544a939813c?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "6 inch pot",
+              "price_cents": 2900,
+              "available": true,
+              "stock": 11,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Succulent Trio",
+          "description": "Three small succulents in 3 inch nursery pots.",
+          "category": "plants",
+          "tags": [
+            "succulents",
+            "plant",
+            "small gift",
+            "desk",
+            "easy care"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Set of 3",
+              "price_cents": 1800,
+              "available": true,
+              "stock": 15,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    },
+    {
+      "slug": "shoreline-books",
+      "name": "Shoreline Books",
+      "category": "books",
+      "description": "An independent bookshop with a big kids corner and staff picks on every shelf.",
+      "cover_image_url": "https://images.unsplash.com/photo-1481415004805-b5b5c1e19e9f?auto=format&fit=crop&w=1600&q=70",
+      "phone": "(216) 555-0133",
+      "email": "hello@shoreline-books.example",
+      "location": {
+        "address": "15500 Detroit Ave",
+        "neighborhood": "Downtown Lakewood",
+        "city": "Lakewood",
+        "state": "OH",
+        "postal_code": "44107",
+        "latitude": 41.4826,
+        "longitude": -81.801,
+        "timezone": "America/New_York",
+        "hours": {
+          "fri": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ],
+          "mon": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ],
+          "sat": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ],
+          "sun": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ],
+          "thu": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ],
+          "tue": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ],
+          "wed": [
+            [
+              "10:00",
+              "20:00"
+            ]
+          ]
+        },
+        "prep_minutes": 15,
+        "tax_rate_bps": 800
+      },
+      "products": [
+        {
+          "name": "Great Lakes Kitchen",
+          "description": "Seasonal recipes from cooks around the Great Lakes. Hardcover.",
+          "category": "books",
+          "tags": [
+            "cookbook",
+            "book",
+            "cooking",
+            "gift",
+            "local"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1720694025145-6f05b62fa334?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "Hardcover",
+              "price_cents": 3200,
+              "available": true,
+              "stock": 4,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Kitchen Science for Curious Kids",
+          "description": "50 safe experiments with things you already have at home. Ages 7 to 11.",
+          "category": "books",
+          "tags": [
+            "kids",
+            "science",
+            "book",
+            "experiment",
+            "birthday",
+            "gift",
+            "age 8",
+            "stem"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1455884981818-54cb785db6fc?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": true,
+          "variations": [
+            {
+              "name": "Paperback",
+              "price_cents": 1800,
+              "available": true,
+              "stock": 5,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        },
+        {
+          "name": "Lighthouse Jigsaw Puzzle",
+          "description": "1,000 pieces featuring a Lake Erie lighthouse at dusk.",
+          "category": "books",
+          "tags": [
+            "puzzle",
+            "game",
+            "gift",
+            "family",
+            "local"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1494059980473-813e73ee784b?auto=format&fit=crop&w=900&q=70",
+          "taxable": true,
+          "featured": false,
+          "variations": [
+            {
+              "name": "1,000 pieces",
+              "price_cents": 2400,
+              "available": true,
+              "stock": 6,
+              "availability": "in_stock"
+            }
+          ],
+          "option_groups": null
+        }
+      ]
+    }
+  ]
+}
