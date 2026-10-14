@@ -34,8 +34,9 @@ async function createPg(url: string): Promise<Db> {
 
 export async function createPglite(dir?: string): Promise<Db> {
   const { PGlite } = await import('@electric-sql/pglite');
-  if (dir) fs.mkdirSync(path.dirname(dir), { recursive: true });
-  const pg = dir ? new PGlite(dir) : new PGlite();
+  const inMemory = !dir || dir.startsWith('memory://');
+  if (!inMemory) fs.mkdirSync(path.dirname(dir), { recursive: true });
+  const pg = inMemory ? new PGlite() : new PGlite(dir);
   await pg.waitReady;
   return {
     query: (sql, params) => pg.query(sql, params as any[]) as any,
@@ -45,11 +46,20 @@ export async function createPglite(dir?: string): Promise<Db> {
   };
 }
 
+/**
+ * True inside a browser-hosted Node.js runtime (Bolt and StackBlitz previews). Their file system is
+ * simulated in the browser, so the embedded database runs in memory there instead of writing hundreds
+ * of files the dev server would also be watching. Data resets when the preview restarts.
+ */
+export function isWebContainer() {
+  return !!(process.versions as Record<string, string | undefined>).webcontainer || !!process.env.WEBCONTAINER;
+}
+
 /** Process-wide database handle. Uses Postgres when DATABASE_URL is set, otherwise embedded Postgres. */
 export function getDb(): Promise<Db> {
   if (!g.__honeydooDb) {
     const url = process.env.DATABASE_URL;
-    g.__honeydooDb = url ? createPg(url) : createPglite(process.env.PGLITE_DIR || '.data/pglite');
+    g.__honeydooDb = url ? createPg(url) : createPglite(process.env.PGLITE_DIR || (isWebContainer() ? 'memory://' : '.data/pglite'));
   }
   return g.__honeydooDb;
 }

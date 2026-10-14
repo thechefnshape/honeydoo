@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
@@ -14,7 +14,8 @@
     "preview:build": "npx tsx preview/build-data.ts && node preview/build.mjs",
     "admin:invite": "tsx --env-file-if-exists=.env.local scripts/admin-invite.ts",
     "db:bundle": "tsx scripts/bundle-sql.ts",
-    "db:bolt": "npm run db:bundle && tsx scripts/export-bolt-sql.ts"
+    "db:bolt": "npm run db:bundle && tsx scripts/export-bolt-sql.ts",
+    "dev:turbo": "next dev --turbopack"
   },
   "keywords": [],
   "author": "",

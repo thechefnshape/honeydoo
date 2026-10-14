@@ -4,4 +4,5 @@ Schema changes: new file in db/migrations, then npm run db:bolt. Never edit old 
 Customers never pay a fee; the shop pays $1 per completed order via Square. Totals are computed only on the server. Orders are marked paid only by verified Square webhooks or server read-back.
 Secrets stay in environment variables and server code only.
 No em dashes and no emojis anywhere (UI, content, code, commits). Minimal, Silicon Valley aesthetic. Do not alter the bee logo.
+Start the preview with npm run dev (webpack), never npx next dev (Turbopack cannot run in Bolt). Do not edit package.json scripts, next.config.mjs or src/lib/db.ts to work around preview errors; report them.
 Run npm run typecheck and npm test after every change.

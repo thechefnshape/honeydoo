@@ -51,12 +51,20 @@ Business model: customers pay the shop's regular prices plus tax, nothing added.
 | Tests | `tests/` (68 passing) |
 | Docs | `docs/` (ARCHITECTURE, STATUS, SQUARE_SETUP, DEPLOYMENT, PRODUCTION_CHECKLIST, BOLT) |
 
+## Running the preview in Bolt
+
+- Start the app with `npm run dev`, never `npx next dev`. The script runs `next dev --webpack`. Next.js 16 defaults to Turbopack, which needs native binaries that Bolt's in-browser runtime cannot load ("Turbopack is not supported on this platform").
+- The first start downloads Next's WebAssembly compiler from npm, and the first page takes 20 to 30 seconds to compile. That is expected.
+- In Bolt's runtime the embedded database runs in memory (`src/lib/db.ts`, `isWebContainer()`), migrates itself and loads the demo shops. Data resets when the preview restarts. Do not change this to a folder on disk: the file churn causes `EAGAIN` errors in Bolt's file system.
+- `next.config.mjs` limits the dev file watcher to app code. Keep those ignore rules.
+- Do not edit package.json scripts, next.config.mjs or src/lib/db.ts to work around preview problems. Report the exact error to the owner instead.
+
 ## Database setup in Bolt
 
 1. Apply `supabase/migrations/20261014000000_honeydoo_schema.sql` to the Bolt database exactly as written. It creates 35 tables with row-level security on every one, and records migrations 001 to 004 as applied.
 2. Only if the owner asks for demo shops: run `supabase/seed.sql` once (safe to repeat; remove later with `delete from merchants where is_demo;`).
 3. Do not create any other tables, and do not generate your own schema from the code.
-4. The in-browser preview cannot reach the database over the network, so leave `DATABASE_URL` unset for preview; the app uses its embedded database there automatically.
+4. The in-browser preview cannot reach the database over the network, so leave `DATABASE_URL` unset for preview; the app uses its in-memory embedded database there automatically.
 5. The published site needs `DATABASE_URL` set to the Bolt database's Postgres connection string (pooler, transaction mode). If Bolt cannot provide a Postgres connection string, stop and tell the owner rather than rewriting the data layer.
 
 ## Environment variables (published site)
