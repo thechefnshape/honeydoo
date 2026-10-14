@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: #FFFFFF; color: #0B0B0B; font-feature-settings: 'ss01'; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { text-wrap: balance; letter-spacing: -0.02em; }
+.tabular { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 2px solid #0B0B0B; outline-offset: 2px; border-radius: 6px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Signature interaction: the bee's wings flutter while Honeydoo is thinking. */
+.bee-wing-a, .bee-wing-b { transform-box: view-box; }
+.bee-thinking .bee-wing-a { animation: wing-a 0.18s ease-in-out infinite alternate; }
+.bee-thinking .bee-wing-b { animation: wing-b 0.18s ease-in-out infinite alternate; }
+.bee-thinking .bee-body-group { animation: hover-lift 1.6s ease-in-out infinite; }
+@keyframes wing-a { from { transform: rotate(0deg); } to { transform: rotate(-11deg); } }
+@keyframes wing-b { from { transform: rotate(0deg); } to { transform: rotate(11deg); } }
+@keyframes hover-lift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@media (prefers-reduced-motion: reduce) {
+  .bee-thinking .bee-wing-a, .bee-thinking .bee-wing-b, .bee-thinking .bee-body-group { animation: none; }
+  * { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+.skeleton { background: linear-gradient(90deg, #F2F2F1 0%, #F7F7F6 50%, #F2F2F1 100%); background-size: 200% 100%; animation: shimmer 1.4s linear infinite; }
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 h-11 text-[15px] font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-honey text-ink hover:bg-honey-deep; }
+  .btn-dark { @apply btn bg-ink text-white hover:bg-charcoal; }
+  .btn-ghost { @apply btn bg-white text-ink ring-1 ring-stone-line hover:bg-stone-soft; }
+  .chip { @apply inline-flex shrink-0 items-center gap-2 rounded-full h-10 px-4 text-sm font-medium ring-1 ring-stone-line bg-white text-ink hover:bg-stone-soft transition-colors; }
+  .chip-active { @apply bg-ink text-white ring-ink hover:bg-ink; }
+  .field { @apply w-full h-12 rounded-xl bg-white ring-1 ring-stone-line px-4 text-[15px] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-ink; }
+  .label { @apply text-[13px] font-medium text-charcoal; }
+  .eyebrow { @apply text-[12px] font-semibold uppercase tracking-[0.08em] text-muted; }
+  .card { @apply rounded-2xl bg-white ring-1 ring-stone-line; }
+  .page { @apply mx-auto w-full max-w-page px-4 sm:px-6 lg:px-8; }
+}
+
+/* Screen transitions: one consistent, quick rise. */
+.route-enter { animation: route-in 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes route-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* Bag count bump when something is added. */
+.bag-bump { animation: bag-bump 0.45s cubic-bezier(0.3, 1.6, 0.5, 1); }
+@keyframes bag-bump { 0% { transform: scale(1); } 35% { transform: scale(1.14); } 100% { transform: scale(1); } }
+
+/* Order placed moment. */
+.placed-moment { animation: fade-in 0.25s ease-out both; }
+.placed-ring { animation: ring 1.4s ease-out infinite; }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ring { 0% { transform: scale(0.85); opacity: 0.9; } 100% { transform: scale(1.6); opacity: 0; } }
+
+/* Sheets slide up from the bottom on phones. */
+dialog[open] { animation: sheet-in 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
+@keyframes sheet-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .route-enter, .bag-bump, .placed-moment, .placed-ring, dialog[open] { animation: none !important; }
+}
+
+/* Bee hop: header logo on arrival. */
+.bee-hop .bee-body-group { animation: bee-hop 0.7s cubic-bezier(0.3, 0.9, 0.4, 1); transform-box: view-box; }
+.bee-hop .bee-wing-a { animation: wing-a 0.09s ease-in-out 6 alternate; }
+.bee-hop .bee-wing-b { animation: wing-b 0.09s ease-in-out 6 alternate; }
+@keyframes bee-hop { 0% { transform: translate(0, 0); } 35% { transform: translate(10px, -48px); } 65% { transform: translate(16px, -20px); } 100% { transform: translate(0, 0); } }
+
+/* Bottom tab bee flutters when its tab becomes active. */
+.tab-arrive .bee-body-group { animation: bee-hop 0.6s cubic-bezier(0.3, 0.9, 0.4, 1); transform-box: view-box; }
+.tab-arrive .bee-wing-a { animation: wing-a 0.09s ease-in-out 6 alternate; }
+.tab-arrive .bee-wing-b { animation: wing-b 0.09s ease-in-out 6 alternate; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bee-hop .bee-body-group, .bee-hop .bee-wing-a, .bee-hop .bee-wing-b,
+  .tab-arrive .bee-body-group, .tab-arrive .bee-wing-a, .tab-arrive .bee-wing-b { animation: none !important; }
+}
+
+/* Bag becomes the bee and hops when something is added. */
+.bag-bee .bee-body-group { animation: bag-hop 0.9s cubic-bezier(0.3, 0.9, 0.4, 1); transform-box: view-box; }
+.bag-bee .bee-wing-a { animation: wing-a 0.08s ease-in-out 10 alternate; }
+.bag-bee .bee-wing-b { animation: wing-b 0.08s ease-in-out 10 alternate; }
+.bag-bee { animation: bag-swap 0.95s ease-out both; }
+@keyframes bag-hop { 0% { transform: translate(0, 0); } 25% { transform: translate(8px, -44px); } 50% { transform: translate(-6px, -30px); } 72% { transform: translate(4px, -10px); } 100% { transform: translate(0, 0); } }
+@keyframes bag-swap { 0% { opacity: 0; transform: scale(0.6); } 15% { opacity: 1; transform: scale(1); } 85% { opacity: 1; } 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .bag-bee, .bag-bee .bee-body-group, .bag-bee .bee-wing-a, .bag-bee .bee-wing-b { animation: none !important; } }
