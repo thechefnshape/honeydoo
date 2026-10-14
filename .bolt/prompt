@@ -1,0 +1,7 @@
+This is honeydoo, an existing, tested Next.js 16 app. Read BOLT_PROMPT.md before any change and follow it on every change.
+Never rebuild or restructure. Keep the data layer in src/lib/db.ts (plain SQL, pg with PGlite fallback); never switch to supabase-js or generated data code.
+Schema changes: new file in db/migrations, then npm run db:bolt. Never edit old migrations.
+Customers never pay a fee; the shop pays $1 per completed order via Square. Totals are computed only on the server. Orders are marked paid only by verified Square webhooks or server read-back.
+Secrets stay in environment variables and server code only.
+No em dashes and no emojis anywhere (UI, content, code, commits). Minimal, Silicon Valley aesthetic. Do not alter the bee logo.
+Run npm run typecheck and npm test after every change.
