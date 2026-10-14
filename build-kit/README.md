@@ -9,4 +9,4 @@ Everything needed to build honeydoo from scratch in Bolt (or another AI builder)
 | `honeydoo-bee.svg` | The bee on its own, for the favicon, loading states and tab icons. |
 | `demo-catalog.json` | The 9 fictional Lakewood demo shops and 51 products with prices (cents), sizes, options, stock, hours and photos. |
 
-The working reference implementation is the rest of this repository (Next.js). Regenerate `demo-catalog.json` after seed changes by re-running the export in `scripts/` history, or ask Claude.
+The working reference implementation is the rest of this repository (Next.js). If the demo shops in `db/seed/` change, `demo-catalog.json` needs regenerating to match.
