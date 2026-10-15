@@ -42,10 +42,9 @@ Verified on 2026-10-14 with `npm test` (68 tests), `npm run typecheck`, a produc
 
 | Item | Status | What is needed |
 | --- | --- | --- |
-| Live Square Sandbox connection | Built, not run against Square | Your Sandbox credentials and a public HTTPS URL (see `SQUARE_SETUP.md`) |
-| End-to-end Sandbox payment | Built, not run against Square | Same as above |
+| Square Sandbox connection and payments | Owner reports successful Sandbox transactions (2026-10-15) | Confirm the $1 app fee appears in the developer account's Sandbox dashboard |
 | Production deployment | Not deployed | Vercel project and a Supabase database |
-| Real payments | Not active | Square production approval, `DEMO_MODE=false` |
+| Real payments | Not active | Square production account (business entity and EIN decided first), production credentials, `DEMO_MODE=false` |
 | AI model responses | Fallback only today | `ANTHROPIC_API_KEY` |
 | Password reset email | Built, not sending | `RESEND_API_KEY` and a verified sending domain |
 | Email verification on sign-up | Not built | Same email provider |
